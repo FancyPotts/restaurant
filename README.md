@@ -1,1 +1,20 @@
 # restaurant
+- [x] Base Layout
+- [ ] Components
+    - [ ] Navbar
+        - [ ] Buttons
+            - [ ] Main
+            - [ ] Menu
+            - [ ] Contact
+        - [ ] Logo/Main
+        - [ ] Interactivity
+            - [ ] Active underline
+            - [ ] Hover
+    - [ ] Pages
+        - [ ] Main
+        - [ ] Menu
+        - [ ] Order
+        - [ ] About
+        - [ ] Contact
+    - [ ] Footer
+        - [ ] Copyright
