@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("console.log('Up and running!')\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("console.log('Up and running!')\n\nfunction component() {\n  const body = document.createElement('div')\n  const header = document.createElement('div')\n  const content = document.createElement('div')\n  const footer = document.createElement('div')\n\n  header.innerHTML = 'Nav'\n  content.innerHTML = 'Content'\n  footer.innerHTML = 'Footer'\n\n  body.appendChild(header)\n  body.appendChild(content)\n  body.appendChild(footer)\n\n  return body\n}\n\ndocument.body.appendChild(component())\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ })
 
