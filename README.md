@@ -16,8 +16,10 @@
             - [ ] Active underline
             - [ ] Hover
         - [ ] Secondary Navbar dropdown
-            - [ ] Menu
-                - [ ] Track where the user is scrolling and display on navbar
+            - [ ] Display: none with onclick display:block
+                - [ ] Transition
+            - [ ] Side nav
+                - [ ] Track where the user is scrolling and display on sidebar
             - [ ] Order
     - [ ] Pages
         - [ ] Main

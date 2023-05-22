@@ -2,7 +2,7 @@ import './style.css'
 
 console.log('Up and running!')
 
-function component() {
+function component () {
   const body = document.createElement('div')
   const header = document.createElement('div')
   const content = document.createElement('div')
@@ -12,7 +12,7 @@ function component() {
   const btnOrder = document.createElement('button')
   const btnAbout = document.createElement('button')
   const btnContact = document.createElement('button')
-  
+
   body.classList.add('body')
   header.classList.add('navbar')
   content.classList.add('content')
@@ -38,14 +38,39 @@ function component() {
   function showMenu () {
     content.innerHTML = ''
     const secondNav = document.createElement('div')
-    secondNav.classList.add('navbar')
+    secondNav.classList.add('sidebar')
     content.appendChild(secondNav)
     secondNav.innerHTML = 'Second nav'
-    content.innerHTML += 'Second page'
+  }
+
+  function menuListing () {
+    const wrapper = document.createElement('div')
+    const apps = document.createElement('div')
+    const entrees = document.createElement('div')
+    const desserts = document.createElement('div')
+
+    wrapper.classList.add('wrapper')
+
+    apps.id = 'apps'
+    entrees.id = 'entrees'
+    desserts.id = 'desserts'
+
+    apps.innerHTML = 'Apps'
+    entrees.innerHTML = 'Entrees'
+    desserts.innerHTML = 'Desserts'
+
+    wrapper.appendChild(apps)
+    wrapper.appendChild(entrees)
+    wrapper.appendChild(desserts)
+
+    content.appendChild(wrapper)
   }
 
   btnMain.addEventListener('click', showMain)
-  btnMenu.addEventListener('click', showMenu)
+  btnMenu.addEventListener('click', function () {
+    showMenu()
+    menuListing()
+  })
 
   header.appendChild(btnMain)
   header.appendChild(btnMenu)
