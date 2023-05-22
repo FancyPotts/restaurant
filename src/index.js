@@ -11,6 +11,7 @@ function component() {
   const btnMenu = document.createElement('button')
   const btnOrder = document.createElement('button')
   const btnAbout = document.createElement('button')
+  const btnContact = document.createElement('button')
   
   body.classList.add('body')
   header.classList.add('navbar')
@@ -20,12 +21,13 @@ function component() {
   btnMenu.classList.add('navbtn')
   btnOrder.classList.add('navbtn')
   btnAbout.classList.add('navbtn', 'about')
+  btnContact.classList.add('navbtn')
 
   btnMain.innerHTML = 'Main'
   btnMenu.innerHTML = 'Menu'
   btnOrder.innerHTML = 'Order'
   btnAbout.innerHTML = 'About'
-  header.innerHTML = 'Nav'
+  btnContact.innerHTML = 'Contact'
   content.innerHTML = 'Content'
   footer.innerHTML = 'Footer'
 
@@ -49,6 +51,7 @@ function component() {
   header.appendChild(btnMenu)
   header.appendChild(btnOrder)
   header.appendChild(btnAbout)
+  header.appendChild(btnContact)
   body.appendChild(header)
   body.appendChild(content)
   body.appendChild(footer)
