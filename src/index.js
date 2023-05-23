@@ -16,7 +16,7 @@ function component () {
   footer.classList.add('footer')
 
   content.innerHTML = 'Content'
-  footer.innerHTML = 'Footer'
+  footer.innerHTML = '&copy; Grimoire Werks'
 
   const header = document.createElement('div')
   const btnMain = document.createElement('button')

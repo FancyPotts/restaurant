@@ -1,6 +1,6 @@
 # restaurant
 
-## The aim is 1) learn how to use the webpack bundler. 2) Build modules and components using the webpack bundler so that it would be a simple matter of swapping out or modifying the component as desired.
+## The aim is 1) learn how to use the webpack bundler. 2) Build modules and components using the webpack bundler so that it would be a simple matter of swapping out or modifying the components as desired.
 
 - [x] Base Layout
 - [ ] Components
@@ -15,8 +15,7 @@
         - [ ] Interactivity
             - [ ] Active underline
             - [ ] Hover
-        - [ ] Secondary Navbar dropdown
-            - [ ] Display: none with onclick display:block
+        - [ ] Secondary Nav sidebar
                 - [ ] Transition
             - [ ] Side nav
                 - [ ] Track where the user is scrolling and display on sidebar

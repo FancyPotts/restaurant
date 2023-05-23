@@ -1,6 +1,16 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+}
+
 body {
     height: 100vh;
     margin: 0;
+}
+
+p {
+    padding-top: 50px;
+    padding-inline: 100px;
 }
 
 .navbtn {
@@ -14,6 +24,7 @@ body {
 
 .navbtn:hover {
     box-shadow: inset 0 -3px 0 0 #f39c12;
+    /* box-shadow: inset 0 -3px 0 0 rgb(255,29,142); */
     cursor: pointer;
 }
 
@@ -31,8 +42,23 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: rgb(255, 0, 85);
+    background-color: rgb(178, 178, 178);
     width: 100px;
+    transition: display 1s;
+}
+
+.menubutton {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    width: 100%;
+    height: 30px;
+    transition: box-shadow 300ms;
+}
+
+.menubutton:hover {
+    box-shadow: inset -3px 0 0 0 rgb(255,29,142);
+    /* box-shadow: inset -3px 0 0 0 #f39c12; */
+    cursor: pointer;
 }
 
 .navbar {
@@ -49,8 +75,12 @@ body {
 }
 
 .footer {
-    background-color: rgb(199, 199, 199);
+    background-color: #2c3e50;
+    color: white;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
