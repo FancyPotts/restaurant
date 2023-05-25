@@ -18,32 +18,7 @@ function component () {
   content.innerHTML = 'Content'
   footer.innerHTML = '&copy; Grimoire Werks'
 
-  // function generateNavbarButton(pageName, currentPage) {
-  //   const button = document.createElement('button');
-  //   button.innerText = pageName;
-    
-  //   // Add active class to the button if it corresponds to the current page
-  //   if (pageName === currentPage) {
-  //     button.classList.add('active');
-  //   }
-    
-  //   // Add an event listener to handle button clicks
-  //   button.addEventListener('click', function() {
-  //     // Remove the active class from all buttons in the navbar
-  //     const buttons = document.querySelectorAll('.navbar button');
-  //     buttons.forEach(function(btn) {
-  //       btn.classList.remove('active');
-  //     });
-      
-  //     // Add the active class to the clicked button
-  //     button.classList.add('active');
-      
-  //     // Redirect to the corresponding page
-  //     window.location.href = pageName + '.html';
-  //   });
-    
-  //   return button;
-  // }
+/* Create variable if page clicked is current page. Check all other buttons to make sure they're not active. Make current page active. */
 
   const header = document.createElement('div')
   const btnMain = document.createElement('button')
