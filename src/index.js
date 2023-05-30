@@ -15,7 +15,6 @@ function component () {
   content.classList.add('content')
   footer.classList.add('footer')
 
-  content.innerHTML = 'Content'
   footer.innerHTML = '&copy; Grimoire Werks'
 
 /* Create variable if page clicked is current page. Check all other buttons to make sure they're not active. Make current page active. */
@@ -61,6 +60,7 @@ function component () {
   header.appendChild(btnOrder)
   header.appendChild(btnAbout)
   header.appendChild(btnContact)
+  mainPage(content)
 
   body.appendChild(header)
   body.appendChild(content)
