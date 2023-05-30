@@ -7,17 +7,18 @@ import aboutPage from './about.js'
 
 function component () {
   const body = document.createElement('div')
+  const contentWrapper = document.createElement('div')
   const content = document.createElement('div')
   const footer = document.createElement('div')
 
   body.classList.add('body')
-
+  contentWrapper.classList.add('content-wrapper')
   content.classList.add('content')
   footer.classList.add('footer')
 
   footer.innerHTML = '&copy; Grimoire Werks'
 
-/* Create variable if page clicked is current page. Check all other buttons to make sure they're not active. Make current page active. */
+  /* Create variable if page clicked is current page. Check all other buttons to make sure they're not active. Make current page active. */
 
   const header = document.createElement('div')
   const btnMain = document.createElement('button')
@@ -62,17 +63,10 @@ function component () {
   header.appendChild(btnContact)
   mainPage(content)
 
+  contentWrapper.appendChild(content)
   body.appendChild(header)
-  body.appendChild(content)
+  body.appendChild(contentWrapper)
   body.appendChild(footer)
-
-  const btns = document.querySelectorAll('button')
-  console.log(btns)
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      console.log(btn.textContent)
-    })
-  })
 
   return body
 }

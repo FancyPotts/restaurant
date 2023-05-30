@@ -9,11 +9,6 @@ body {
     margin: 0;
 }
 
-p {
-    padding-top: 50px;
-    padding-inline: 100px;
-}
-
 .page-link.active {
     color: red;
     /* Add any desired highlighting styles */
@@ -85,6 +80,13 @@ p {
     /* outline: 2px solid #000000; */
     height: 40px;
     align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 75px;
+    padding-left: 30px;
 }
 
 .content {
