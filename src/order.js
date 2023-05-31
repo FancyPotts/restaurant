@@ -1,3 +1,3 @@
 export default function orderPage (insert) {
-    insert.innerHTML = 'Order page'
+  insert.innerHTML = 'Here at the Burger Joint, its on first come, first serve basis.'
 }

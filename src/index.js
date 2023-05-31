@@ -23,9 +23,11 @@ function component () {
   const header = document.createElement('div')
   const btnMain = document.createElement('button')
   const btnMenu = document.createElement('button')
-  const btnOrder = document.createElement('button')
+  const btnReserve = document.createElement('button')
   const btnAbout = document.createElement('button')
   const btnContact = document.createElement('button')
+  const btnMainOverlay = document.createElement('span')
+  const btnMainwrapper = document.createElement('div')
 
   btnMain.addEventListener('click', () => {
     mainPage(content)
@@ -33,7 +35,7 @@ function component () {
   btnMenu.addEventListener('click', () => {
     menuPage(content)
   })
-  btnOrder.addEventListener('click', () => {
+  btnReserve.addEventListener('click', () => {
     orderPage(content)
   })
   btnAbout.addEventListener('click', () => {
@@ -43,22 +45,35 @@ function component () {
     contactPage(content)
   })
 
-  btnMain.classList.add('navbtn')
+  btnMain.classList.add('navbtn', 'logo')
   btnMenu.classList.add('navbtn')
-  btnOrder.classList.add('navbtn')
+  btnReserve.classList.add('navbtn')
   btnAbout.classList.add('navbtn', 'about')
   btnContact.classList.add('navbtn')
   header.classList.add('navbar')
+  btnMainOverlay.classList.add('overlay', 'logo-secondary')
+  btnMainwrapper.classList.add('btn-wrapper')
 
-  btnMain.innerHTML = 'Main'
+  btnMain.addEventListener('mouseout', function () {
+    btnMainOverlay.innerHTML = ''
+    btnMain.innerHTML = 'The Burger Joint'
+  })
+
+  btnMain.addEventListener('mouseover', function () {
+    btnMainOverlay.innerHTML = 'Incredible'
+  })
+
+  btnMain.innerHTML = 'The Burger Joint'
   btnMenu.innerHTML = 'Menu'
-  btnOrder.innerHTML = 'Order'
+  btnReserve.innerHTML = 'Reserve'
   btnAbout.innerHTML = 'About'
   btnContact.innerHTML = 'Contact'
 
-  header.appendChild(btnMain)
+  btnMainwrapper.appendChild(btnMain)
+  btnMainwrapper.appendChild(btnMainOverlay)
+  header.appendChild(btnMainwrapper)
   header.appendChild(btnMenu)
-  header.appendChild(btnOrder)
+  header.appendChild(btnReserve)
   header.appendChild(btnAbout)
   header.appendChild(btnContact)
   mainPage(content)

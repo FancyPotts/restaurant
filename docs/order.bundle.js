@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ orderPage)\n/* harmony export */ });\nfunction orderPage (insert) {\n    insert.innerHTML = 'Order page'\n}\n\n//# sourceURL=webpack://restaurant/./src/order.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ orderPage)\n/* harmony export */ });\nfunction orderPage (insert) {\n  insert.innerHTML = 'Here at the Burger Joint, its on first come, first serve basis.'\n}\n\n\n//# sourceURL=webpack://restaurant/./src/order.js?");
 
 /***/ })
 

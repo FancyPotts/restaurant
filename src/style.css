@@ -19,6 +19,30 @@ body {
     margin: 0;
 }
 
+.btn-wrapper {
+    position: relative;
+    width: 80px;
+}
+
+.logo {
+    font-family: simple;
+    top: 0;
+    width: 160px;
+    height: 50px;
+
+}
+
+.logo-secondary {
+    font-family: myCursive;
+    font-size: 1.2em;
+    color: orange;
+    position: absolute;
+    left: 50px;
+    bottom: -25px;
+    pointer-events: none;
+    transform: rotate(-5deg)
+}
+
 .logo-wrapper {
     left: 15%;
     position: relative;
@@ -31,6 +55,13 @@ body {
     top: 0;
     z-index: 1;
     color: orange;
+    cursor: pointer;
+    transition: transform 200ms;
+    transform: rotate(-10deg)
+}
+
+.logo-main:hover {
+    transform: scale(1.5) rotate(10deg);
 }
 
 .logo-accessory {
@@ -38,9 +69,8 @@ body {
     font-size: 3em;
     position: absolute;
     top: 25px;
-    margin-left: 80px;
+    margin-left: 85px;
     color: white;
-    overflow-x:visible;
 }
 
 .page-link.active {
@@ -55,6 +85,10 @@ body {
     border: 0;
     transition: box-shadow 300ms;
     transition: background 150ms;
+}
+
+.navbtn:nth-child(2) {
+    margin-left: 100px;
 }
 
 .navbtn:hover {
@@ -96,7 +130,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
     color: rgb(255, 255, 255);
-    width: 100%;
+    width: 60px;
     height: 30px;
     transition: box-shadow 300ms ease-in-out;
 }
@@ -119,7 +153,7 @@ body {
     display: flex;
     flex-grow: 1;
     padding-top: 75px;
-    padding-left: 30px;
+    padding-inline: 80px;
 }
 
 .content {
