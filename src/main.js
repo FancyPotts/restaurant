@@ -10,7 +10,7 @@ export default function mainPage (insert) {
   secondaryLogo.classList.add('logo-accessory')
 
   mainLogo.textContent = 'Incredible'
-  secondaryLogo.textContent = 'Burger Joint'
+  secondaryLogo.textContent = 'The Burger Joint'
 
   logoWrapper.appendChild(mainLogo)
   logoWrapper.appendChild(secondaryLogo)

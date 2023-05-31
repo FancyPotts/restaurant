@@ -20,7 +20,7 @@ body {
 }
 
 .logo-wrapper {
-    margin-left: 50px;
+    left: 15%;
     position: relative;
 }
 
@@ -29,18 +29,19 @@ body {
     font-size: 4em;
     position: absolute;
     top: 0;
-    z-index: 0;
-    color: yellow;
+    z-index: 1;
+    color: orange;
 }
 
 .logo-accessory {
     font-family: simple;
-    font-size: 2em;
+    font-size: 3em;
     position: absolute;
-    top: 75px;
-    margin-left: 100px;
-    z-index: 1;
-    color: red;
+    top: 25px;
+    margin-left: 80px;
+    /* z-index: 1; */
+    color: white;
+    overflow-x:visible;
 }
 
 .page-link.active {
