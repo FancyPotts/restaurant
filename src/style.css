@@ -1,3 +1,13 @@
+@font-face {
+    font-family: myCursive;
+    src: url(CedarvilleCursive-Regular.ttf);
+}
+
+@font-face {
+    font-family: simple;
+    src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
 * {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -9,9 +19,32 @@ body {
     margin: 0;
 }
 
+.logo-wrapper {
+    margin-left: 50px;
+    position: relative;
+}
+
+.logo-main {
+    font-family: myCursive;
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    color: yellow;
+}
+
+.logo-accessory {
+    font-family: simple;
+    font-size: 2em;
+    position: absolute;
+    top: 75px;
+    margin-left: 100px;
+    z-index: 1;
+    color: red;
+}
+
 .page-link.active {
     color: red;
-    /* Add any desired highlighting styles */
   }
 
 .navbtn {
