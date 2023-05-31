@@ -45,7 +45,7 @@ function component () {
     contactPage(content)
   })
 
-  btnMain.classList.add('navbtn', 'logo')
+  btnMain.classList.add('logo')
   btnMenu.classList.add('navbtn')
   btnReserve.classList.add('navbtn')
   btnAbout.classList.add('navbtn', 'about')
