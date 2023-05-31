@@ -39,7 +39,6 @@ body {
     position: absolute;
     top: 25px;
     margin-left: 80px;
-    /* z-index: 1; */
     color: white;
     overflow-x:visible;
 }
