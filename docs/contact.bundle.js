@@ -15,7 +15,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactPage)\n/* harmony export */ });\nfunction contactPage (insert) {\n    insert.innerHTML = 'Contact page'\n}\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactPage)\n/* harmony export */ });\nfunction contactPage (insert) {\n  insert.innerHTML = ''\n  insert.innerHTML = 'Contact page'\n}\n\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ })
 

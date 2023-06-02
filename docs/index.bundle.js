@@ -135,7 +135,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactPage)\n/* harmony export */ });\nfunction contactPage (insert) {\n    insert.innerHTML = 'Contact page'\n}\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactPage)\n/* harmony export */ });\nfunction contactPage (insert) {\n  insert.innerHTML = ''\n  insert.innerHTML = 'Contact page'\n}\n\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ orderPage)\n/* harmony export */ });\nfunction orderPage (insert) {\n  insert.innerHTML = ''\n  const psyche = document.createElement('p')\n  const psyche2 = document.createElement('p')\n  const psyche3 = document.createElement('p')\n  psyche.innerHTML = 'Here at the Incredible Burger Joint, you can call us at 000 000 0...'\n  psyche2.innerHTML = 'Psyche. We realize that we serve some pretty epic burgers. With this realization, we think its not right to give anyone dibs. Come and earn it, taste an incredible burger in all its glory.'\n  psyche3.innerHTML = 'In case it wasn\\'t clear, its on first come, first serve basis.'\n  insert.appendChild(psyche)\n  insert.appendChild(psyche2)\n  insert.appendChild(psyche3)\n}\n\n\n//# sourceURL=webpack://restaurant/./src/order.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ orderPage)\n/* harmony export */ });\nfunction orderPage (insert) {\n  insert.innerHTML = ''\n  const psycheBody = document.createElement('div')\n\n  const psyche = document.createElement('p')\n  const psyche2 = document.createElement('p')\n  const psyche3 = document.createElement('p')\n  psyche.innerHTML = 'Here at the Incredible Burger Joint, you can call us at 000 000 0...'\n  psyche2.innerHTML = 'Psyche. We realize that we serve some pretty epic burgers. With this realization, we think its not right to give anyone dibs. Come and earn it, taste an incredible burger in all its glory. Meet some people along the way.'\n  psyche3.innerHTML = 'In case it wasn\\'t clear, its on first come, first serve basis.'\n\n  psycheBody.appendChild(psyche)\n  psycheBody.appendChild(psyche2)\n  psycheBody.appendChild(psyche3)\n\n  insert.appendChild(psycheBody)\n}\n\n\n//# sourceURL=webpack://restaurant/./src/order.js?");
 
 /***/ }),
 

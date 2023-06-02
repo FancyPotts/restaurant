@@ -1,3 +1,4 @@
 export default function contactPage (insert) {
-    insert.innerHTML = 'Contact page'
+  insert.innerHTML = ''
+  insert.innerHTML = 'Contact page'
 }
